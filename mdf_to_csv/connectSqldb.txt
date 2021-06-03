@@ -1,0 +1,16 @@
+sudo mysql -u -p
+
+create user 'souravkc'@'localhost'identified by 'pass123';
+
+grant all privileges on mdfdata.* to 'souravkc'@'localhost';
+
+sudo mysql -u souravkc -ppass123
+
+use mdfdata;
+use mdftable;
+
+create table tablename(Eingine Speed varchar(100));
+
+desc mdftable
+
+-Run csvtomysql.py
